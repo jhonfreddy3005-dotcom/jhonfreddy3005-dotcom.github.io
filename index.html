@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Fernando Vargas Sanchez - Dermatologia Clinica</title>
+<title>Dr. Fernando Andrés Vargas Sánchez - Dermatología Clínica</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -116,27 +116,6 @@
 
   .nav-links a:hover { color: var(--gold); }
   .nav-links a:hover::after { width: 100%; }
-
-  .nav-cta {
-    background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    padding: 8px 22px;
-    border-radius: 99px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    font-family: 'DM Sans', sans-serif;
-  }
-
-  .nav-cta:hover {
-    background: var(--gold);
-    color: var(--bg);
-  }
 
   .hamburger {
     display: none;
@@ -812,74 +791,6 @@
     margin-top: 2px;
   }
 
-  /* ── CONSULTATIONS ── */
-  #consultations {
-    background: var(--bg);
-  }
-
-  .consult-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
-  }
-
-  .consult-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 28px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .consult-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(to right, var(--gold), transparent);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-
-  .consult-card:hover {
-    border-color: rgba(201,169,110,0.2);
-    transform: translateY(-3px);
-  }
-
-  .consult-card:hover::before { opacity: 1; }
-
-  .consult-code {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--teal);
-    letter-spacing: 0.08em;
-    margin-bottom: 12px;
-    display: block;
-  }
-
-  .consult-card h3 {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: var(--text);
-    line-height: 1.45;
-  }
-
-  .virtual-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(78,205,196,0.1);
-    border: 1px solid rgba(78,205,196,0.2);
-    border-radius: 99px;
-    padding: 4px 12px;
-    font-size: 0.7rem;
-    color: var(--teal);
-    letter-spacing: 0.08em;
-    margin-top: 12px;
-  }
-
   /* ── FORMATION ── */
   #formation {
     background: var(--bg2);
@@ -1057,79 +968,6 @@
     gap: 20px;
   }
 
-  .contact-form-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 40px;
-  }
-
-  .form-group {
-    margin-bottom: 20px;
-  }
-
-  .form-group label {
-    display: block;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text3);
-    margin-bottom: 8px;
-  }
-
-  .form-group input,
-  .form-group textarea,
-  .form-group select {
-    width: 100%;
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    border-radius: var(--radius2);
-    padding: 12px 16px;
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.92rem;
-    transition: border-color 0.2s;
-    outline: none;
-    resize: vertical;
-  }
-
-  .form-group input:focus,
-  .form-group textarea:focus,
-  .form-group select:focus {
-    border-color: var(--gold);
-  }
-
-  .form-group select option { background: var(--bg3); }
-
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-
-  .form-submit {
-    width: 100%;
-    background: linear-gradient(135deg, var(--gold), var(--gold2));
-    color: var(--bg);
-    border: none;
-    padding: 14px;
-    border-radius: 99px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'DM Sans', sans-serif;
-    margin-top: 8px;
-    box-shadow: 0 8px 24px rgba(201,169,110,0.25);
-  }
-
-  .form-submit:hover {
-    box-shadow: 0 12px 36px rgba(201,169,110,0.4);
-    transform: translateY(-1px);
-  }
-
   /* ── FOOTER ── */
   footer {
     background: var(--bg);
@@ -1218,7 +1056,6 @@
     .hamburger { display: flex; }
     .about-grid, .formation-grid, .contact-full { grid-template-columns: 1fr; gap: 40px; }
     .hero-stats { position: relative; right: auto; bottom: auto; margin-top: 48px; justify-content: flex-start; }
-    .form-row { grid-template-columns: 1fr; }
     footer { flex-direction: column; text-align: center; }
   }
 
@@ -1250,15 +1087,14 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-logo">Dr. Vargas <span>Dermatologia</span></a>
+  <a href="#hero" class="nav-logo">Dr. Vargas <span>Dermatología</span></a>
   <ul class="nav-links">
-    <li><a href="#about">Sobre Mi</a></li>
+    <li><a href="#about">Sobre Mí</a></li>
     <li><a href="#services">Servicios</a></li>
-    <li><a href="#consultations">Consultas</a></li>
-    <li><a href="#formation">Formacion</a></li>
-    <li><a href="#contact">Contacto</a></li>
+    <li><a href="#formation">Formación</a></li>
+    <li><a href="#achievements">Reconocimientos</a></li>
+    <li><a href="#contact">Contacto Profesional</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Agendar Cita</a>
   <div class="hamburger" id="hamburger">
     <span></span><span></span><span></span>
   </div>
@@ -1267,12 +1103,11 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" id="mobileClose">&#215;</button>
-  <a href="#about" onclick="closeMobile()">Sobre Mi</a>
+  <a href="#about" onclick="closeMobile()">Sobre Mí</a>
   <a href="#services" onclick="closeMobile()">Servicios</a>
-  <a href="#consultations" onclick="closeMobile()">Consultas</a>
-  <a href="#formation" onclick="closeMobile()">Formacion</a>
+  <a href="#formation" onclick="closeMobile()">Formación</a>
   <a href="#achievements" onclick="closeMobile()">Reconocimientos</a>
-  <a href="#contact" onclick="closeMobile()">Contacto</a>
+  <a href="#contact" onclick="closeMobile()">Contacto Profesional</a>
 </div>
 
 <!-- HERO -->
@@ -1285,33 +1120,33 @@
   <div class="hero-content">
     <div class="hero-tag">
       <span class="hero-tag-dot"></span>
-      Especialista en Dermatologia Clinica
+      Especialista en Dermatología Clínica
     </div>
 
     <h1 class="hero-name">
-      Dr. Fernando Andres<br><strong>Vargas Sanchez</strong>
+      Dr. Fernando Andrés<br><strong>Vargas Sánchez</strong>
     </h1>
 
-    <div class="hero-specialty">// Dermatologo Clinico Certificado</div>
+    <div class="hero-specialty">// Dermatólogo Clínico Certificado</div>
 
     <p class="hero-desc">
-      Espacio creado para ofrecer atencion medica especializada con altos estandares de calidad, innovacion tecnologica y bienestar integral. Soluciones personalizadas para el cuidado de la piel, el cabello y las unas.
+      Portafolio profesional que presenta la trayectoria, expertise y contribuciones del Dr. Fernando Andrés Vargas Sánchez en el campo de la dermatología clínica.
     </p>
 
     <div class="hero-motto">
-      "La salud de tu piel es nuestra prioridad."
+      "La salud de la piel como fundamento del bienestar integral."
     </div>
 
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Agendar Consulta</a>
-      <a href="#services" class="btn-outline">Ver Servicios</a>
+      <a href="#about" class="btn-primary">Conocer Trayectoria</a>
+      <a href="#services" class="btn-outline">Explorar Servicios</a>
     </div>
   </div>
 
   <div class="hero-stats">
     <div class="stat">
       <span class="stat-number">14+</span>
-      <span class="stat-label">Patologias Tratadas</span>
+      <span class="stat-label">Patologías Tratadas</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat">
@@ -1321,7 +1156,7 @@
     <div class="stat-divider"></div>
     <div class="stat">
       <span class="stat-number">100%</span>
-      <span class="stat-label">Atencion Personalizada</span>
+      <span class="stat-label">Enfoque Especializado</span>
     </div>
   </div>
 
@@ -1334,37 +1169,37 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="section-label">Sobre el Especialista</div>
-  <h2 class="section-title">Experiencia medica al <em>servicio de tu piel</em></h2>
+  <h2 class="section-title">Experiencia médica al <em>servicio de la dermatología</em></h2>
 
   <div class="about-grid">
     <div class="about-text reveal">
       <p>
-        El <strong>Dr. Fernando Andres Vargas Sanchez</strong> es especialista en Dermatologia Clinica con una solida formacion medica orientada al diagnostico, tratamiento y seguimiento integral de enfermedades y alteraciones dermatologicas.
+        El <strong>Dr. Fernando Andrés Vargas Sánchez</strong> es especialista en Dermatología Clínica con una sólida formación médica orientada al diagnóstico, tratamiento y seguimiento integral de enfermedades y alteraciones dermatológicas.
       </p>
       <p>
-        Su consultorio nace de la conviccion de que cada paciente merece atencion personalizada, procedimientos seguros y soluciones esteticas que favorezcan resultados naturales y armonicos. La propuesta medica integra tecnologia dermatologica de vanguardia con un enfoque humano y cercano.
+        Su práctica profesional se basa en la convicción de que cada caso merece atención personalizada, procedimientos seguros y soluciones que favorezcan resultados naturales y armónicos. Integra tecnología dermatológica de vanguardia con un enfoque humano y riguroso.
       </p>
       <p>
-        Con un portafolio de <strong>mas de 30 procedimientos especializados</strong>, el Dr. Vargas atiende desde condiciones cotidianas como el acne o la dermatitis, hasta intervenciones quirurgicas complejas de piel y tejido celular subcutaneo.
+        Con un portafolio de <strong>más de 30 procedimientos especializados</strong>, el Dr. Vargas Sánchez aborda desde condiciones comunes como el acné o la dermatitis, hasta intervenciones quirúrgicas complejas de piel y tejido celular subcutáneo.
       </p>
 
       <div class="philosophy-box">
         <p>
-          "Trabajamos para mejorar la salud y apariencia de la piel mediante tratamientos efectivos, seguros y adaptados a las necesidades de cada paciente, promoviendo bienestar, seguridad y confianza."
+          "Trabajamos para mejorar la salud y apariencia de la piel mediante tratamientos efectivos, seguros y adaptados a las necesidades específicas, promoviendo bienestar, seguridad y confianza."
         </p>
       </div>
     </div>
 
     <div class="reveal" style="transition-delay:0.2s">
       <div class="about-contact-card">
-        <div class="contact-card-title">Informacion de Contacto</div>
+        <div class="contact-card-title">Información Profesional</div>
 
         <div class="contact-item">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           </div>
           <div class="contact-detail">
-            <label>Direccion</label>
+            <label>Dirección</label>
             <span>Calle 5 #38-14 Consultorio 802</span>
           </div>
         </div>
@@ -1374,7 +1209,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           </div>
           <div class="contact-detail">
-            <label>Telefono</label>
+            <label>Teléfono</label>
             <a href="tel:3183838891">318 383 8891</a>
           </div>
         </div>
@@ -1384,12 +1219,10 @@
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </div>
           <div class="contact-detail">
-            <label>Correo Electronico</label>
+            <label>Correo Electrónico</label>
             <a href="mailto:neurofer@hotmail.com">neurofer@hotmail.com</a>
           </div>
         </div>
-
-        <a href="#contact" class="btn-primary" style="width:100%;text-align:center;margin-top:8px;display:block">Solicitar Cita</a>
       </div>
     </div>
   </div>
@@ -1397,25 +1230,25 @@
 
 <!-- WHY US -->
 <section id="why">
-  <div class="section-label">Por que elegirnos</div>
-  <h2 class="section-title">Atencion <em>diferencial</em> en dermatologia</h2>
-  <p class="section-subtitle">Cinco pilares que hacen unica la experiencia medica con el Dr. Vargas Sanchez.</p>
+  <div class="section-label">Por qué elegir esta práctica</div>
+  <h2 class="section-title">Atención <em>diferencial</em> en dermatología</h2>
+  <p class="section-subtitle">Cinco pilares que definen la excelencia profesional del Dr. Vargas Sánchez.</p>
 
   <div class="why-grid">
     <div class="why-card reveal">
       <div class="why-icon">
         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
       </div>
-      <h3>Atencion Personalizada</h3>
-      <p>Cada paciente recibe un plan de tratamiento adaptado a su caso clinico particular, garantizando soluciones especificas y efectivas.</p>
+      <h3>Atención Personalizada</h3>
+      <p>Cada caso clínico recibe un enfoque adaptado, garantizando soluciones específicas y efectivas basadas en evidencia.</p>
     </div>
 
     <div class="why-card reveal" style="transition-delay:0.1s">
       <div class="why-icon">
         <svg viewBox="0 0 24 24"><path d="M19.02 10h-6.01V4H7v6.01H1l9.01 9 9.01-9zM1 21v2h22v-2H1z"/></svg>
       </div>
-      <h3>Tecnologia Moderna</h3>
-      <p>Equipos dermatologicos de ultima generacion que permiten diagnosticos precisos y procedimientos minimamente invasivos.</p>
+      <h3>Tecnología Moderna</h3>
+      <p>Equipos dermatológicos de última generación que permiten diagnósticos precisos y procedimientos mínimamente invasivos.</p>
     </div>
 
     <div class="why-card reveal" style="transition-delay:0.2s">
@@ -1423,7 +1256,7 @@
         <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
       </div>
       <h3>Procedimientos Seguros</h3>
-      <p>Protocolos de seguridad rigurosos y materiales certificados para garantizar el bienestar y la tranquilidad del paciente en todo momento.</p>
+      <p>Protocolos de seguridad rigurosos y materiales certificados para garantizar el bienestar del paciente.</p>
     </div>
 
     <div class="why-card reveal" style="transition-delay:0.3s">
@@ -1431,38 +1264,38 @@
         <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
       </div>
       <h3>Resultados Naturales</h3>
-      <p>Tratamientos orientados a resultados armonicos que respetan la naturalidad y mejoran la confianza del paciente progresivamente.</p>
+      <p>Tratamientos orientados a resultados armónicos que respetan la naturalidad y mejoran la calidad de vida.</p>
     </div>
 
     <div class="why-card reveal" style="transition-delay:0.4s">
       <div class="why-icon">
         <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
       </div>
-      <h3>Acompanamiento Permanente</h3>
-      <p>Seguimiento continuo durante todo el proceso de tratamiento, con disponibilidad para resolver dudas y ajustar el plan segun la evolucion.</p>
+      <h3>Acompañamiento Permanente</h3>
+      <p>Seguimiento continuo y riguroso durante todo el proceso clínico.</p>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services">
-  <div class="section-label">Servicios Dermatologicos</div>
-  <h2 class="section-title">Patologias y <em>tratamientos</em> clinicos</h2>
-  <p class="section-subtitle">Diagnostico, tratamiento y seguimiento especializado de las principales enfermedades y alteraciones dermatologicas.</p>
+  <div class="section-label">Servicios Dermatológicos</div>
+  <h2 class="section-title">Patologías y <em>tratamientos</em> clínicos</h2>
+  <p class="section-subtitle">Diagnóstico, tratamiento y seguimiento especializado de las principales enfermedades y alteraciones dermatológicas.</p>
 
   <div class="conditions-grid reveal">
-    <div class="condition-tag">Acne y cicatrices</div>
-    <div class="condition-tag">Rosacea</div>
+    <div class="condition-tag">Acné y cicatrices</div>
+    <div class="condition-tag">Rosácea</div>
     <div class="condition-tag">Dermatitis</div>
     <div class="condition-tag">Psoriasis</div>
-    <div class="condition-tag">Reacciones alergicas</div>
-    <div class="condition-tag">Infecciones cutaneas</div>
-    <div class="condition-tag">Hongos en piel y unas</div>
+    <div class="condition-tag">Reacciones alérgicas</div>
+    <div class="condition-tag">Infecciones cutáneas</div>
+    <div class="condition-tag">Hongos en piel y uñas</div>
     <div class="condition-tag">Control de lunares</div>
-    <div class="condition-tag">Vitiligo</div>
-    <div class="condition-tag">Caida del cabello</div>
-    <div class="condition-tag">Dermatitis atopica</div>
-    <div class="condition-tag">Acne juvenil</div>
+    <div class="condition-tag">Vitíligo</div>
+    <div class="condition-tag">Caída del cabello</div>
+    <div class="condition-tag">Dermatitis atópica</div>
+    <div class="condition-tag">Acné juvenil</div>
     <div class="condition-tag">Verrugas</div>
     <div class="condition-tag">Molusco contagioso</div>
   </div>
@@ -1475,18 +1308,18 @@
       <div class="accordion-header">
         <div class="accordion-title">
           <span class="accordion-code">863</span>
-          Reseccion de Lesiones Cutaneas
+          Resección de Lesiones Cutáneas por Cauterización
         </div>
         <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
       <div class="accordion-body">
         <div class="accordion-body-inner">
           <ul class="procedure-list">
-            <li><span class="proc-code">863101</span>Reseccion en area general hasta seis lesiones (cauterizacion, fulguracion o crioterapia)</li>
-            <li><span class="proc-code">863102</span>Reseccion en area general con mas de seis lesiones</li>
-            <li><span class="proc-code">863103</span>Reseccion en area especial hasta tres lesiones</li>
-            <li><span class="proc-code">863104</span>Reseccion en area especial entre cuatro y diez lesiones</li>
-            <li><span class="proc-code">863105</span>Reseccion en area especial con mas de diez lesiones</li>
+            <li><span class="proc-code">863101</span>Resección en área general hasta seis lesiones (cauterización, fulguración o crioterapia)</li>
+            <li><span class="proc-code">863102</span>Resección en área general con más de seis lesiones</li>
+            <li><span class="proc-code">863103</span>Resección en área especial hasta tres lesiones</li>
+            <li><span class="proc-code">863104</span>Resección en área especial entre cuatro y diez lesiones</li>
+            <li><span class="proc-code">863105</span>Resección en área especial con más de diez lesiones</li>
           </ul>
         </div>
       </div>
@@ -1496,7 +1329,7 @@
       <div class="accordion-header">
         <div class="accordion-title">
           <span class="accordion-code">860</span>
-          Biopsias de Piel y Tejido Celular Subcutaneo
+          Biopsias de Piel y Tejido Celular Subcutáneo
         </div>
         <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
@@ -1504,7 +1337,7 @@
         <div class="accordion-body-inner">
           <ul class="procedure-list">
             <li><span class="proc-code">860101</span>Biopsia de piel con sacabocado y sutura simple</li>
-            <li><span class="proc-code">860102</span>Biopsia incisional o escisional de piel, tejido celular subcutaneo o mucosa con sutura</li>
+            <li><span class="proc-code">860102</span>Biopsia incisional o escisional de piel, tejido celular subcutáneo o mucosa con sutura</li>
             <li><span class="proc-code">860103</span>Biopsia escisional de una, lecho o matriz ungueal</li>
           </ul>
         </div>
@@ -1515,18 +1348,18 @@
       <div class="accordion-header">
         <div class="accordion-title">
           <span class="accordion-code">869</span>
-          Curacion y Drenaje de Lesiones
+          Curación y Drenaje de Lesiones
         </div>
         <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
       <div class="accordion-body">
         <div class="accordion-body-inner">
           <ul class="procedure-list">
-            <li><span class="proc-code">869500</span>Curacion de lesiones en piel o tejido celular subcutaneo</li>
-            <li><span class="proc-code">869500S</span>Curacion compleja de lesiones en piel o tejido celular subcutaneo</li>
-            <li><span class="proc-code">861101</span>Drenaje de coleccion superficial mediante incision o aspiracion</li>
-            <li><span class="proc-code">861102</span>Drenaje de coleccion profunda por incision o aspiracion</li>
-            <li><span class="proc-code">861103</span>Drenaje de hematoma subungueal mediante incision o aspiracion</li>
+            <li><span class="proc-code">869500</span>Curación de lesiones en piel o tejido celular subcutáneo</li>
+            <li><span class="proc-code">869500S</span>Curación compleja de lesiones en piel o tejido celular subcutáneo</li>
+            <li><span class="proc-code">861101</span>Drenaje de colección superficial mediante incisión o aspiración</li>
+            <li><span class="proc-code">861102</span>Drenaje de colección profunda por incisión o aspiración</li>
+            <li><span class="proc-code">861103</span>Drenaje de hematoma subungueal mediante incisión o aspiración</li>
           </ul>
         </div>
       </div>
@@ -1536,18 +1369,18 @@
       <div class="accordion-header">
         <div class="accordion-title">
           <span class="accordion-code">864</span>
-          Reseccion de Tumores Benignos o Malignos
+          Resección de Tumores Benignos o Malignos
         </div>
         <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
       <div class="accordion-body">
         <div class="accordion-body-inner">
           <ul class="procedure-list">
-            <li><span class="proc-code">864101</span>Area general: reseccion de tumor hasta 3 cm</li>
-            <li><span class="proc-code">864102</span>Area general: reseccion de tumor entre 3 y 5 cm</li>
-            <li><span class="proc-code">864105</span>Tumor benigno con reparacion mediante colgajo o injerto</li>
-            <li><span class="proc-code">864201</span>Area especial: reseccion de tumor hasta 1 cm</li>
-            <li><span class="proc-code">864202</span>Area especial: reseccion de tumor entre 1 y 2 cm</li>
+            <li><span class="proc-code">864101</span>Área general: resección de tumor hasta 3 cm</li>
+            <li><span class="proc-code">864102</span>Área general: resección de tumor entre 3 y 5 cm</li>
+            <li><span class="proc-code">864105</span>Tumor benigno con reparación mediante colgajo o injerto</li>
+            <li><span class="proc-code">864201</span>Área especial: resección de tumor hasta 1 cm</li>
+            <li><span class="proc-code">864202</span>Área especial: resección de tumor entre 1 y 2 cm</li>
           </ul>
         </div>
       </div>
@@ -1564,10 +1397,10 @@
       <div class="accordion-body">
         <div class="accordion-body-inner">
           <ul class="procedure-list">
-            <li><span class="proc-code">865201</span>Sutura de herida unica de cara (hasta 2.5 cm, multiples, con o sin compromiso de labios/parpados)</li>
-            <li><span class="proc-code">865101</span>Sutura herida unica en area general (hasta 3, 5, 10, 20 cm y mayor de 20 cm)</li>
-            <li><span class="proc-code">865102</span>Sutura de heridas multiples en area general</li>
-            <li><span class="proc-code">---</span>Suturas en pliegues de flexion, genitales, manos y pies (hasta 2.5, 5 cm y mayor de 5 cm)</li>
+            <li><span class="proc-code">865201</span>Sutura de herida única de cara (hasta 2.5 cm, múltiples, con o sin compromiso de labios/párpados)</li>
+            <li><span class="proc-code">865101</span>Sutura herida única en área general (hasta 3, 5, 10, 20 cm y mayor de 20 cm)</li>
+            <li><span class="proc-code">865102</span>Sutura de heridas múltiples en área general</li>
+            <li><span class="proc-code">---</span>Suturas en pliegues de flexión, genitales, manos y pies (hasta 2.5, 5 cm y mayor de 5 cm)</li>
             <li><span class="proc-code">---</span>Sutura parcial de cuero cabelludo (escalpe)</li>
           </ul>
         </div>
@@ -1585,13 +1418,13 @@
       <div class="accordion-body">
         <div class="accordion-body-inner">
           <ul class="procedure-list">
-            <li><span class="proc-code">862701</span>Onicectomia</li>
-            <li><span class="proc-code">862702</span>Matricectomia parcial</li>
-            <li><span class="proc-code">862703</span>Matricectomia total</li>
-            <li><span class="proc-code">868101</span>Reseccion simple de cicatriz en area general</li>
-            <li><span class="proc-code">861201</span>Extraccion de cuerpo extrano en area general mediante incision</li>
-            <li><span class="proc-code">861202</span>Extraccion de cuerpo extrano en area especial mediante incision</li>
-            <li><span class="proc-code">869400</span>Retiro de sutura en piel o tejido celular subcutaneo</li>
+            <li><span class="proc-code">862701</span>Onicectomía</li>
+            <li><span class="proc-code">862702</span>Matricectomía parcial</li>
+            <li><span class="proc-code">862703</span>Matricectomía total</li>
+            <li><span class="proc-code">868101</span>Resección simple de cicatriz en área general</li>
+            <li><span class="proc-code">861201</span>Extracción de cuerpo extraño en área general mediante incisión</li>
+            <li><span class="proc-code">861202</span>Extracción de cuerpo extraño en área especial mediante incisión</li>
+            <li><span class="proc-code">869400</span>Retiro de sutura en piel o tejido celular subcutáneo</li>
           </ul>
         </div>
       </div>
@@ -1608,11 +1441,11 @@
       <div class="accordion-body">
         <div class="accordion-body-inner">
           <ul class="procedure-list">
-            <li><span class="proc-code">861401</span>Infiltracion intralesional hasta cinco lesiones</li>
-            <li><span class="proc-code">861401B</span>Infiltracion en lesion unica entre 5 y 10 cm</li>
-            <li><span class="proc-code">861401C</span>Infiltracion en lesion unica mayor de 10 cm</li>
-            <li><span class="proc-code">861402</span>Infiltracion entre cinco y diez lesiones</li>
-            <li><span class="proc-code">861403</span>Infiltracion en mas de diez lesiones</li>
+            <li><span class="proc-code">861401</span>Infiltración intralesional hasta cinco lesiones</li>
+            <li><span class="proc-code">861401B</span>Infiltración en lesión única entre 5 y 10 cm</li>
+            <li><span class="proc-code">861401C</span>Infiltración en lesión única mayor de 10 cm</li>
+            <li><span class="proc-code">861402</span>Infiltración entre cinco y diez lesiones</li>
+            <li><span class="proc-code">861403</span>Infiltración en más de diez lesiones</li>
           </ul>
         </div>
       </div>
@@ -1621,96 +1454,73 @@
   </div>
 </section>
 
-<!-- CONSULTATIONS -->
-<section id="consultations">
-  <div class="section-label">Modalidades de Consulta</div>
-  <h2 class="section-title">Tipos de <em>atencion medica</em></h2>
-  <p class="section-subtitle">Ofrecemos multiples modalidades de consulta para adaptarnos a las necesidades y situacion de cada paciente.</p>
-
-  <div class="consult-grid">
-    <div class="consult-card reveal">
-      <span class="consult-code">890202</span>
-      <h3>Consulta de Primera Vez</h3>
-      <p style="font-size:0.82rem;color:var(--text3);margin-top:8px">Evaluacion inicial completa del estado dermatologico del paciente.</p>
-    </div>
-
-    <div class="consult-card reveal" style="transition-delay:0.1s">
-      <span class="consult-code">890302</span>
-      <h3>Consulta de Control</h3>
-      <p style="font-size:0.82rem;color:var(--text3);margin-top:8px">Seguimiento y monitoreo del tratamiento en curso.</p>
-    </div>
-
-    <div class="consult-card reveal" style="transition-delay:0.2s">
-      <span class="consult-code">890702</span>
-      <h3>Consulta de Urgencias</h3>
-      <p style="font-size:0.82rem;color:var(--text3);margin-top:8px">Atencion prioritaria para casos dermatologicos urgentes.</p>
-    </div>
-
-    <div class="consult-card reveal" style="transition-delay:0.3s">
-      <span class="consult-code">890402</span>
-      <h3>Interconsulta</h3>
-      <p style="font-size:0.82rem;color:var(--text3);margin-top:8px">Evaluacion especializada derivada desde otro profesional de salud.</p>
-    </div>
-
-    <div class="consult-card reveal" style="transition-delay:0.4s">
-      <span class="consult-code">890602</span>
-      <h3>Manejo Intrahospitalario</h3>
-      <p style="font-size:0.82rem;color:var(--text3);margin-top:8px">Cuidado y gestion dermatologica dentro de entorno hospitalario.</p>
-    </div>
-
-    <div class="consult-card reveal" style="transition-delay:0.5s">
-      <span class="consult-code">890502</span>
-      <h3>Junta Medica Especializada</h3>
-      <p style="font-size:0.82rem;color:var(--text3);margin-top:8px">Participacion en juntas multidisciplinarias para casos complejos.</p>
-      <div class="virtual-badge">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><circle cx="4" cy="4" r="4" fill="#4ecdc4"/></svg>
-        Tambien disponible en modalidad virtual
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FORMATION -->
 <section id="formation">
-  <div class="section-label">Formacion y Trayectoria</div>
-  <h2 class="section-title">Educacion <em>y experiencia</em> profesional</h2>
-  <p class="section-subtitle">Solida formacion academica combinada con practica clinica especializada en dermatologia.</p>
+  <div class="section-label">Formación y Trayectoria</div>
+  <h2 class="section-title">Educación <em>y experiencia</em> profesional</h2>
+  <p class="section-subtitle">Sólida formación académica combinada con práctica clínica especializada en dermatología.</p>
 
   <div class="formation-grid">
-    <div>
-      <div class="section-label" style="margin-bottom:24px;font-size:0.68rem">Educacion Academica</div>
-      <div class="formation-timeline">
-        <div class="timeline-item">
-          <div class="timeline-year">Especializacion</div>
-          <div class="timeline-title">Especialista en Dermatologia Clinica</div>
-          <div class="timeline-institution">Formacion Medica Especializada</div>
-          <div class="timeline-desc">Entrenamiento clinico avanzado en diagnostico y tratamiento integral de enfermedades de la piel, cabello y unas.</div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-year">Pregrado</div>
-          <div class="timeline-title">Medico Cirujano</div>
-          <div class="timeline-institution">Facultad de Medicina</div>
-          <div class="timeline-desc">Formacion integral en ciencias de la salud con enfasis en semiologia, medicina interna y procedimientos clinicos.</div>
-        </div>
-      </div>
+  <div>
+    <div class="section-label" style="margin-bottom:24px;font-size:0.68rem">
+      Educación Académica
     </div>
 
+    <div class="formation-timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-year">2015 · Especialización</div>
+
+        <div class="timeline-title">
+          Especialista en Dermatología Clínica y Cirugía Dermatológica
+        </div>
+
+        <div class="timeline-institution">
+          Pontificia Universidad Católica de Río de Janeiro (Brasil)
+        </div>
+
+        <div class="timeline-desc">
+          Formación médica especializada con entrenamiento clínico avanzado
+          en diagnóstico, tratamiento y procedimientos dermatológicos.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2003 · Pregrado</div>
+
+        <div class="timeline-title">
+          Médico y Cirujano
+        </div>
+
+        <div class="timeline-institution">
+          Universidad del Cauca
+        </div>
+
+        <div class="timeline-desc">
+          Formación integral en ciencias de la salud con énfasis en medicina
+          clínica, semiología y atención integral del paciente.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
     <div>
-      <div class="section-label" style="margin-bottom:24px;font-size:0.68rem">Experiencia Clinica</div>
+      <div class="section-label" style="margin-bottom:24px;font-size:0.68rem">Experiencia Clínica</div>
       <div class="formation-timeline">
         <div class="timeline-item">
           <div class="timeline-year">Actualidad</div>
-          <div class="timeline-title">Consultorio Privado de Dermatologia</div>
+          <div class="timeline-title">Consultorio Privado de Dermatología</div>
           <div class="timeline-institution">Calle 5 #38-14, Consultorio 802</div>
-          <div class="timeline-desc">Direccion de consultorio dermatologico con portafolio completo de servicios clinicos y procedimientos especializados.</div>
+          <div class="timeline-desc">Dirección de consultorio dermatológico con portafolio completo de servicios clínicos y procedimientos especializados.</div>
         </div>
 
         <div class="timeline-item">
-          <div class="timeline-year">Formacion Continua</div>
-          <div class="timeline-title">Actualizacion en Tecnologia Dermatologica</div>
+          <div class="timeline-year">Formación Continua</div>
+          <div class="timeline-title">Actualización en Tecnología Dermatológica</div>
           <div class="timeline-institution">Desarrollo Profesional Permanente</div>
-          <div class="timeline-desc">Incorporacion continua de equipos y protocolos de ultima generacion para garantizar la mejor atencion a los pacientes.</div>
+          <div class="timeline-desc">Incorporación continua de equipos y protocolos de última generación para garantizar la mejor atención.</div>
         </div>
       </div>
     </div>
@@ -1721,15 +1531,15 @@
 <section id="achievements">
   <div class="section-label">Diferenciadores</div>
   <h2 class="section-title">Compromisos con la <em>excelencia</em></h2>
-  <p class="section-subtitle">Lo que nos distingue como consultorio dermatologico de referencia.</p>
+  <p class="section-subtitle">Lo que distingue la práctica dermatológica del Dr. Vargas Sánchez.</p>
 
   <div class="achievement-cards">
     <div class="achievement-card reveal">
       <div class="achievement-icon-wrap">
         <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
       </div>
-      <h3>Atencion de Alta Calidad</h3>
-      <p>Altos estandares de calidad en cada procedimiento y consulta dermatologica ofrecida al paciente.</p>
+      <h3>Atención de Alta Calidad</h3>
+      <p>Altos estándares de calidad en cada procedimiento y consulta dermatológica.</p>
     </div>
 
     <div class="achievement-card reveal" style="transition-delay:0.1s">
@@ -1737,7 +1547,7 @@
         <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
       </div>
       <h3>Portafolio Integral</h3>
-      <p>Mas de 30 procedimientos especializados y 14 patologias atendidas bajo un mismo techo.</p>
+      <p>Más de 30 procedimientos especializados y 14 patologías atendidas bajo un mismo techo.</p>
     </div>
 
     <div class="achievement-card reveal" style="transition-delay:0.2s">
@@ -1745,7 +1555,7 @@
         <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
       </div>
       <h3>Protocolos Certificados</h3>
-      <p>Procedimientos seguros basados en evidencia cientifica y protocolos medicos estandarizados internacionalmente.</p>
+      <p>Procedimientos seguros basados en evidencia científica y protocolos médicos estandarizados internacionalmente.</p>
     </div>
 
     <div class="achievement-card reveal" style="transition-delay:0.3s">
@@ -1753,21 +1563,21 @@
         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
       </div>
       <h3>Consulta Virtual</h3>
-      <p>Disponibilidad de atencion remota para mayor accesibilidad y comodidad del paciente.</p>
+      <p>Disponibilidad de atención remota para mayor accesibilidad en contextos institucionales.</p>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-label">Contacto</div>
-  <h2 class="section-title">Agenda tu <em>consulta</em></h2>
-  <p class="section-subtitle">Estamos listos para atenderte. Completa el formulario o contactanos directamente.</p>
+  <div class="section-label">Contacto Profesional</div>
+  <h2 class="section-title">Información para <em>alianzas e instituciones</em></h2>
+  <p class="section-subtitle">Para consultas institucionales, colaboraciones médicas, referencias profesionales o información detallada del portafolio clínico.</p>
 
   <div class="contact-full">
     <div class="contact-info reveal">
-      <h3>Hablemos sobre la salud de tu piel</h3>
-      <p>El Dr. Fernando Vargas Sanchez y su equipo estan disponibles para resolver tus dudas y agendar tu cita de manera rapida y sencilla.</p>
+      <h3>Contacto para Instituciones y Profesionales</h3>
+      <p>El Dr. Fernando Andrés Vargas Sánchez mantiene disponibilidad para revisiones de trayectoria, propuestas de colaboración y alianzas estratégicas en el ámbito de la salud dermatológica.</p>
 
       <div class="contact-items">
         <div class="contact-item">
@@ -1775,7 +1585,7 @@
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           </div>
           <div class="contact-detail">
-            <label>Ubicacion</label>
+            <label>Ubicación</label>
             <span>Calle 5 #38-14 Consultorio 802</span>
           </div>
         </div>
@@ -1785,7 +1595,7 @@
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           </div>
           <div class="contact-detail">
-            <label>Telefono / WhatsApp</label>
+            <label>Teléfono / WhatsApp</label>
             <a href="tel:3183838891">318 383 8891</a>
           </div>
         </div>
@@ -1802,52 +1612,18 @@
       </div>
     </div>
 
-    <div class="contact-form-card reveal" style="transition-delay:0.2s">
-      <form onsubmit="handleForm(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu nombre completo" required>
-          </div>
-          <div class="form-group">
-            <label>Telefono</label>
-            <input type="tel" placeholder="Tu numero de contacto">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Correo electronico</label>
-          <input type="email" placeholder="tu@correo.com" required>
-        </div>
-
-        <div class="form-group">
-          <label>Tipo de consulta</label>
-          <select>
-            <option value="">Selecciona una opcion</option>
-            <option>Consulta de primera vez</option>
-            <option>Consulta de control</option>
-            <option>Consulta virtual</option>
-            <option>Procedimiento especializado</option>
-            <option>Urgencias</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label>Motivo de consulta</label>
-          <textarea rows="4" placeholder="Describe brevemente tu condicion o motivo de consulta..."></textarea>
-        </div>
-
-        <button type="submit" class="form-submit" id="submitBtn">Enviar Solicitud</button>
-      </form>
+    <div class="contact-info reveal" style="transition-delay:0.2s">
+      <h3>Perfil Profesional</h3>
+      <p>Especialista en Dermatología Clínica con enfoque en diagnóstico preciso, manejo integral y procedimientos avanzados. Abierto a oportunidades de colaboración académica e institucional.</p>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Dr. Fernando Vargas Sanchez</div>
+  <div class="footer-logo">Dr. Fernando Andrés Vargas Sánchez</div>
   <div class="footer-motto">"La salud de tu piel es nuestra prioridad."</div>
-  <div class="footer-rights">Especialista en Dermatologia Clinica &copy; 2025</div>
+  <div class="footer-rights">Especialista en Dermatología Clínica &copy; 2025</div>
 </footer>
 
 <script>
@@ -1905,24 +1681,6 @@
       nav.style.boxShadow = 'none';
     }
   });
-
-  // ── FORM ──
-  function handleForm(e) {
-    e.preventDefault();
-    const btn = document.getElementById('submitBtn');
-    btn.textContent = 'Enviando...';
-    btn.style.opacity = '0.7';
-    setTimeout(() => {
-      btn.textContent = 'Solicitud Enviada';
-      btn.style.background = 'linear-gradient(135deg, #4ecdc4, #2bbdb4)';
-      btn.style.opacity = '1';
-      setTimeout(() => {
-        btn.textContent = 'Enviar Solicitud';
-        btn.style.background = 'linear-gradient(135deg, var(--gold), var(--gold2))';
-        e.target.reset();
-      }, 3000);
-    }, 1500);
-  }
 
   // ── ANIMATED COUNTER ──
   function animateCounter(el, target, suffix = '') {
